@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/Contenedor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesos"
+        android:id="@+id/txtPesos"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:id="@+id/btnCovertir"
+        android:layout_alignParentEnd="true"
+        android:onClick="btnConvertirOnClick" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pesos"
+        android:id="@+id/chbpesos"
+        android:checked="false"
+        android:onClick="chpesosOnClick"
+        android:layout_alignTop="@+id/cbdolares"
+        android:layout_alignStart="@+id/editTextPesos" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dolares"
+        android:id="@+id/cbdolares"
+        android:checked="false"
+        android:onClick="cbdolaresOnClick"
+        android:layout_marginBottom="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/editTextPesos" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextPesos"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/txtPesos"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDolares"
+        android:layout_below="@+id/editTextPesos"
+        android:layout_alignParentStart="true"
+        android:text="Dolares" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText2Dolares"
+        android:layout_below="@+id/textViewDolares"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Cambio"
+        android:id="@+id/textView2Cambio"
+        android:layout_below="@+id/editText2Dolares"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText3Cambio"
+        android:layout_below="@+id/textView2Cambio"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
